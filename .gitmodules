@@ -1,3 +1,6 @@
 [submodule "devices/eastronsdm"]
 	path = devices/eastronsdm
 	url = https://github.com/safecility/eastronsdm
+[submodule "devices/milesightct"]
+	path = devices/milesightct
+	url = https://github.com/safecility/milesightct

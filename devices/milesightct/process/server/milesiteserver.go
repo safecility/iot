@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/lib/stream"
-	"github.com/safecility/microservices/go/device/milesightct/process/messages"
-	"github.com/safecility/microservices/go/device/milesightct/process/store"
+	"github.com/safecility/iot/devices/milesightct/process/messages"
+	"github.com/safecility/iot/devices/milesightct/process/store"
 	"net/http"
 	"os"
 )

@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/setup"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/helpers"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/setup/sections"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/helpers"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/setup/sections"
 	"os"
 )
 

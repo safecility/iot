@@ -1,4 +1,4 @@
-module github.com/safecility/microservices/go/device/milesightct/process
+module github.com/safecility/iot/devices/milesightct/process
 
 go 1.21
 

@@ -5,8 +5,8 @@ import (
 	"context"
 	"fmt"
 	"github.com/rs/zerolog/log"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/helpers"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/messages"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/helpers"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/messages"
 )
 
 func CheckOrCreateBigqueryTable(config *helpers.Config) (*bigquery.TableMetadata, error) {

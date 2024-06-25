@@ -6,9 +6,9 @@ import (
 	"context"
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/setup"
-	"github.com/safecility/microservices/go/device/milesightct/process/helpers"
-	"github.com/safecility/microservices/go/device/milesightct/process/server"
-	"github.com/safecility/microservices/go/device/milesightct/process/store"
+	"github.com/safecility/iot/devices/milesightct/process/helpers"
+	"github.com/safecility/iot/devices/milesightct/process/server"
+	"github.com/safecility/iot/devices/milesightct/process/store"
 	"os"
 )
 

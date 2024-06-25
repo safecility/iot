@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/lib"
-	"github.com/safecility/microservices/go/device/milesightct/process/messages"
+	"github.com/safecility/iot/devices/milesightct/process/messages"
 )
 
 // TODO adjust locationId when changed on local db

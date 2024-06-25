@@ -5,8 +5,8 @@ import (
 	"context"
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/setup"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/helpers"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/server"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/helpers"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/server"
 	"os"
 )
 
@@ -47,7 +47,7 @@ func main() {
 		log.Fatal().Str("topic", config.Pubsub.Topics.Bigquery).Msg("Topic does not exist")
 	}
 
-	bigqueryServer := server.NewHotDropServer(sub, topic, config.StoreAll)
+	bigqueryServer := server.NewMilesightServer(sub, topic, config.StoreAll)
 
 	bigqueryServer.Start()
 

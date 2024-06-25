@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/safecility/microservices/go/device/milesightct/process/messages"
+	"github.com/safecility/iot/devices/milesightct/process/messages"
 )
 
 type DeviceStore interface {

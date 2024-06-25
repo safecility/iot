@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"github.com/rs/zerolog/log"
 	"github.com/safecility/go/lib/stream"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/messages"
-	"github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery/protobuffer"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/messages"
+	"github.com/safecility/iot/devices/milesightct/pipeline/bigquery/protobuffer"
 	"net/http"
 	"os"
 )
@@ -20,7 +20,7 @@ type MilesightServer struct {
 	storeAll bool
 }
 
-func NewHotDropServer(sub *pubsub.Subscription, pub *pubsub.Topic, storeAll bool) *MilesightServer {
+func NewMilesightServer(sub *pubsub.Subscription, pub *pubsub.Topic, storeAll bool) *MilesightServer {
 	return &MilesightServer{sub: sub, pub: pub, storeAll: storeAll, encoding: pubsub.EncodingBinary}
 }
 
@@ -53,7 +53,7 @@ func (es *MilesightServer) receive() {
 			if crr != nil {
 				log.Err(crr).Msg("could not add milesight data")
 			}
-			log.Debug().Str("result", *r).Msg("published milesight data")
+			log.Debug().Str("result", *r).Msg("published milesight bigquery")
 		}()
 	})
 	if err != nil {

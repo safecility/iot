@@ -1,4 +1,4 @@
-module github.com/safecility/microservices/go/device/milesightct/pipeline/bigquery
+module github.com/safecility/iot/devices/milesightct/pipeline/bigquery
 
 go 1.21
 
@@ -9,7 +9,7 @@ require (
 	cloud.google.com/go/pubsub v1.39.0
 	github.com/rs/zerolog v1.33.0
 	github.com/safecility/go/lib v0.0.0-20240624102715-b6e0a55fbdf4
-	github.com/safecility/go/setup v0.0.0-20240624093135-5a7b78dc326a
+	github.com/safecility/go/setup v0.0.0-20240624102715-b6e0a55fbdf4
 	google.golang.org/protobuf v1.34.2
 )
 

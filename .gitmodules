@@ -1,0 +1,3 @@
+[submodule "devices/eastronsdm"]
+	path = devices/eastronsdm
+	url = https://github.com/safecility/eastronsdm

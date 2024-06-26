@@ -7,3 +7,6 @@
 [submodule "devices/hotdrop"]
 	path = devices/hotdrop
 	url = https://github.com/safecility/hotdrop
+[submodule "microservices"]
+	path = microservices
+	url = https://github.com/safecility/microservices

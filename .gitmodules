@@ -4,3 +4,6 @@
 [submodule "devices/milesightct"]
 	path = devices/milesightct
 	url = https://github.com/safecility/milesightct
+[submodule "devices/hotdrop"]
+	path = devices/hotdrop
+	url = https://github.com/safecility/hotdrop
